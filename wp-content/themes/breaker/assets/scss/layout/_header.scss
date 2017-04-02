@@ -1,0 +1,148 @@
+.main-header {
+  position: relative;
+  background-image: url("assets/img/top-background.png") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  border-bottom: 20px solid #d81406;
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .primary-nav {
+    .menu-toggle {
+      color: #fff;
+      display: block;
+      width: 60px;
+      padding-top: 25px;
+      position: absolute;
+      z-index: 9999;
+      right: 0;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+    .menu {
+      text-align: left;
+      @media (max-width: 767px) {
+        display: none;
+        width: 100%;
+        background: #333;
+        position: absolute;
+        z-index: 1000;
+      }
+    }
+
+    .menu-item {
+      vertical-align: middle;
+      margin-left: 10px;
+      display: inline-block;
+      border-bottom: 3px solid rgba(0,0,0,.0);
+      @media (max-width: 767px) {
+        display: block;
+        text-align: center;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      a {
+        transition: all .2s ease-in-out;
+      }
+      &.current-menu-item,
+      &:hover {
+        a {
+          background-color: #d81406;
+          color: rgba(255,255,255,1);
+        }
+      }
+      a {
+        display: block;
+        color: rgba(255,255,255,.64);
+        text-transform: uppercase;
+        line-height: 16px;
+        font-weight: 600;
+        padding: 32px 15px;
+        font-family: 'AlternateGotNo3D';
+        font-size: 21px;
+      }
+    }
+    .home-icon {
+      a {
+        background-image: url("http://s015.radikal.ru/i330/1703/d3/a52553c644e6.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 72px;
+        height: 48px;
+        padding: 40px;
+        margin: 0 auto;
+      }
+      text-indent: -9999px;
+    }
+  }
+  .slogan-wrap {
+    color: rgba(255,255,255,.64);
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .slogan {
+      font-size: 100px;
+      font-weight: 900;
+      @media (min-width: 320px) {
+        font-size: 50px;
+      }
+      @media (min-width: 767px) {
+        font-size: 60px;
+      }
+      @media (min-width: 991px) {
+        font-size: 80px;
+      }
+      @media (min-width: 1200px) {
+        font-size: 100px;
+      }
+    }
+    .sub-slogan {
+      font-size: 80px;
+      font-weight: 900;
+      margin-top: -20px;
+      @media (min-width: 320px) {
+        font-size: 40px;
+        margin-top: -10px;
+      }
+      @media (min-width: 767px) {
+        font-size: 50px;
+        margin-top: -10px;
+      }
+      @media (min-width: 991px) {
+        font-size: 60px;
+      }
+      @media (min-width: 1200px) {
+        font-size: 80px;
+        margin-top: -20px;
+      }
+    }
+    .other-header-txt {
+      font-size: 22px;
+      margin-top: -40px;
+      @media (min-width: 320px) {
+        font-size: 12px;
+        margin-top: -10px;
+      }
+      @media (min-width: 767px) {
+        font-size: 16px;
+        margin-top: -10px;
+      }
+      @media (min-width: 991px) {
+        font-size: 18px;
+      }
+      @media (min-width: 1200px) {
+        font-size: 22px;
+        margin-top: -40px;
+      }
+    }
+  }
+}

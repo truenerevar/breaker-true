@@ -1,0 +1,20 @@
+.about {
+  padding: 50px 15px;
+  .about-content {
+    color: #b5cbd1;
+    font-family: 'AkzidenzGroteskBE-LightCN';
+    font-weight: 300;
+    @media (min-width: 320px) {
+      line-height: 30px;
+      font-size: 20px;
+    }
+    @media (min-width: 767px) {
+      line-height: 40px;
+      font-size: 30px;
+    }
+    @media (min-width: 1200px) {
+      line-height: 50px;
+      font-size: 42px;
+    }
+  }
+}

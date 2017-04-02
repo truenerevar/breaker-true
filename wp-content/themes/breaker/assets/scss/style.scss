@@ -1,0 +1,30 @@
+/*!
+Theme Name: breaker
+Theme URI: http://breaker-template.ck.ua/
+Author: Vitalii Vlasyuk
+Author URI: http://breaker-template.ck.ua/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: breaker
+Tags:
+*/
+
+// styles reset and third party libs
+@import 'vendors/reset';
+@import 'vendors/bootstrap/bootstrap-grid';
+@import 'vendors/flexslider/flexslider';
+@import 'vendors/fancybox/jquery.fancybox';
+//base
+@import 'base/fonts';
+@import 'base/base';
+// layouts
+@import 'layout/header';
+@import 'layout/page-home/home-about';
+@import 'layout/page-home/new-media';
+@import 'layout/contact-page/contact-page';
+@import 'layout/directors-page/directors';
+@import 'layout/directors-page/single';
+@import 'layout/footer';
+

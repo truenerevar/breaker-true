@@ -1,0 +1,26 @@
+body {
+  font-family: 'AkzidenzGroteskBE-Regular';
+  font-size: 14px;
+  background-color: #0f1318;
+  color: #b5cbd1;
+  min-width: 320px;
+}
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+.section-name {
+  padding: 20px 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #b5cbd1;
+  font-family: 'AlternateGotNo1D';
+  @media (min-width: 320px) {
+    font-size: 55px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 75px;
+  }
+}
